@@ -1,35 +1,38 @@
-Operational risk in B2B SaaS stems from weak data foundations. Inaccurate MRR movements, bad event attribution, and silent schema changes destroy trust in executive metrics. I design end-to-end data systems that guarantee revenue integrity, clear metric definition, and production-grade pipeline reliability.
+# Zihad Rahman 👋
+**Analytics Engineer | Bangladesh**
+
+I bridge raw event streams and billing schemas into business-readable SaaS metrics. Focused on fixing revenue friction, modeling MRR mechanics, and building production-grade dbt pipelines.
 
 ---
 
-## What I Build
+### 🎯 Business Value & Problem Solving
+
+| What SaaS Businesses Suffer From | What I Engineer & Deliver |
+| :--- | :--- |
+| **Silent MRR Bottlenecks:** Broken proration, unhandled mid-cycle upgrades, and misaligned date spines distorting MRR. | **100% Precise MRR Waterfalls:** Robust dbt date-spine models tracking New, Expansion, Contraction, Churn, and Reactivation. |
+| **Flawed Event Attribution:** Broken identity resolution and async webhooks distorting trial-to-paid signals. | **Bulletproof Attribution Schemas:** Clean event pipelines connecting user activity directly to Stripe billing objects. |
+| **Dashboard Distrust:** Ad-hoc SQL and untested models leading to conflicting executive metrics. | **Production Data Layer:** Modular dbt models with automated freshness checks, custom tests, and GitHub Actions CI/CD. |
 
 ---
 
-* **B2B SaaS Revenue Pipelines:** Robust dbt transformations modeling complex MRR waterfalls (New, Expansion, Contraction, Churn, Reactivation), NRR, and cohort retention.
-* **Event & Attribution Frameworks:** Clean ingestion schemas mapping granular user events, trial-to-paid conversions, and billing activity directly to revenue logic.
-* **Testing & Data Governance:** Comprehensive dbt data tests, custom assertions, and source freshness validations to catch pipeline anomalies before they hit production dashboards.
-* **Production Data Architecture:** Scalable ELT patterns built on DuckDB, PostgreSQL, and cloud data warehouses managed with terminal-first workflows and GitHub Actions CI/CD.
+### 🛠️ Workflow & Technical Stack
+
+* **Transformation & Modeling:** `dbt-core` (Jinja, Macros, Testing), SQL (CTE Architecture, Window Functions, Date Spines)
+* **Databases & Engines:** DuckDB (Local Execution Engine), PostgreSQL, BigQuery
+* **Automation & CI/CD:** Python (Ingestion Pipelines & API Glue), Git / `gh` CLI, GitHub Actions CI/CD
+* **Semantic & BI Layer:** MetricFlow, Lightdash, Evidence.dev
+* **Dev Environment:** VS Code (Terminal-First CLI), Windows, Notion
 
 ---
 
-## Core Technical Skills
+### ⚡ Core Areas of Mastery
 
----
+#### 1. B2B SaaS Revenue Mechanics
+Deep expertise in modeling complex subscription dynamics:
+* **Waterfalls & Health KPIs:** Calculating NRR, GRR, Cohort Retention, LTV:CAC, and MRR movements accurately across time boundaries.
+* **Billing Schema Modeling:** Resolving co-termed subscriptions, multi-currency conversions, and Stripe webhook payload edge cases.
 
-### Analytics Engineering & Data Modeling
-
-* **SQL & Transformations:** Advanced CTE architectures, date-spine modeling, window functions, dbt-core, Jinja macros
-* **Business Logic & Metrics:** MRR Waterfalls, NRR/GRR, LTV:CAC, Churn Analysis, Event Attribution Models, Stripe Billing Schemas
-* **Databases & Warehouses:** DuckDB, PostgreSQL, BigQuery
-* **Pipeline Automation:** Python, Git/GitHub CLI (`gh`), GitHub Actions CI/CD workflows, Lightdash, MetricFlow
-* **Developer Environment:** VS Code (terminal-first CLI), Linux/Windows, Notion
-
----
-
-## B2B SaaS Domain Expertise
-
----
-
-* **Solving MRR Bottlenecks:** Handling mid-cycle upgrades/downgrades, proration logic, co-termed subscriptions, and multi-currency edge cases accurately across date spines.
-* **Event Attribute Integrity:** Resolving broken sessionization, identity resolution issues, and asynchronous billing webhook payloads to maintain accurate event attribution.
+#### 2. Event Attribution & User Journey
+Constructing reliable frameworks to map user actions to monetary outcomes:
+* **Identity Resolution:** Stitching anonymous product analytics events to paid user accounts.
+* **Conversion Funnels:** Tracking trial-to-paid conversions, Product-Qualified Leads (PQLs), and event deduplication.
